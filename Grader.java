@@ -8,7 +8,7 @@ public class Grader {
         System.out.println("Enter number of grades");
         int numGrades  = Input.nextInt();
         
-        while ( numGrades < 0 && numGrades > 100){
+        while ( numGrades < 0 ){
             System.out.println("Please enter a positive number");
             numGrades = Input.nextInt();
         }
