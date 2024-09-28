@@ -8,21 +8,22 @@ public class Grader {
         System.out.println("Enter number of grades");
         int numGrades  = Input.nextInt();
         
-        while ( numGrades < 0 ){
+        while (numGrades < 0){
             System.out.println("Please enter a positive number");
             numGrades = Input.nextInt();
         }
 
         //Creating Array to store grades
-        // System.out.println("Please enter the grades separated by spaces");
-        // int[] listOfGrades = Input.nextInt();
+        System.out.println("Please enter the grades separated by spaces");
+        int[] IntGrades = new int[numGrades];
+        for (int i = 0; i < numGrades; i++){
+            IntGrades[i] = Input.nextInt();
+        }
 
-        // for(int i = 0; i < numGrades; i++){
-        //     System.out.println(listOfGrades[i]);
-        // }
-
-
-        
+        for (int i = 0; i < IntGrades.length; i++){
+            System.out.println("Grade " + i + ":"+ IntGrades[i]);
+        }
+    
 
         Input.close();
     }
