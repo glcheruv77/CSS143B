@@ -13,7 +13,7 @@ public class Grader {
             numGrades = Input.nextInt();
         }
 
-        //Creating Array to store grades
+        //Task 2: Creating Array to store grades
         System.out.println("Please enter the grades separated by spaces");
         int[] IntGrades = new int[numGrades];
         for (int i = 0; i < numGrades; i++){
@@ -27,5 +27,25 @@ public class Grader {
 
         Input.close();
     }
+    //Task 3: Assign Grades Values
+    public static String getLetterGrade(int grade) {
+        String letterGrade;
     
+        switch (grade / 10) {
+            case 10:
+                letterGrade = "A";
+            case 9:
+                letterGrade = "A";
+            case 8:
+                letterGrade = "B";
+            case 7:
+                letterGrade = "C";
+            case 6:
+                letterGrade = "D";
+            default:
+                letterGrade = "F";
+        }
+    
+        return letterGrade;
+    }
 }
