@@ -57,4 +57,21 @@ public class Grader {
         average /= doubleArray.length;
         return average;
     }
+
+    //Task 5: Same as Task 3 but using If instead of Switch.
+    public static String getLetterGrade (double grade){
+        String LetterGrade;
+        if (grade > 90) {
+            LetterGrade = "A";
+        } else if (grade > 80){
+            LetterGrade = "B";
+        } else if( grade > 70){
+            LetterGrade = "C";
+        } else if (grade > 60){
+            LetterGrade = "D";
+        } else {
+            LetterGrade = "F";
+        }
+        return LetterGrade;
+    }
 }
