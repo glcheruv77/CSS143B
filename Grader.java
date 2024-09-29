@@ -1,5 +1,4 @@
 import java.util.Scanner;
-// import java.util.Arrays;
 
 public class Grader {
     public static void main(String[] args){
@@ -47,5 +46,15 @@ public class Grader {
         }
     
         return letterGrade;
+    }
+    //Task 4: Finding the average
+
+    public static double average (double doubleArray[]){
+        double average = 0;
+        for (int k = 0; k < doubleArray.length; k++){
+            average += doubleArray[k];
+        }
+        average /= doubleArray.length;
+        return average;
     }
 }
