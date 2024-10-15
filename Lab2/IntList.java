@@ -32,7 +32,9 @@ public class IntList {
         }
         return total;
     }
-
+    //Do you see output for each integer added to your list? For example, “95 100 58” 
+    // A: The code doesn’t print each integer as it’s added. 
+    //Instead, the list elements are all printed at once when you call toString() in the main method.
     public static void main(String[] args) { 
         IntList a = new IntList();
         a.append(95); 
