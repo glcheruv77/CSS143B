@@ -1,6 +1,30 @@
+//Glenn Cheruvathur
+//CSS143B 
 public class Point2D {
     private int x;
     private int y;
+
+    // Default constructor
+    public Point2D() {
+        this.x = 0;
+        this.y = 0;
+    }
+
+    //Parameterized constructor
+    public Point2D(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    //Copy constructor
+    public Point2D(Point2D other) {
+        // TODO
+        this.x = other.x;
+        this.y = other.y;
+    }
+
+    // Using getX or getY methods in the copy constructor is optional.
+    //It boils down to your preference for consistency and readability.
 
     //Setter method
     public void setX (int nX){
@@ -31,12 +55,25 @@ public class Point2D {
         return "(" + x + ", " + y +")";
     }
 
+    // @Override
+    // public boolean equals(Object obj) {
+    //     if (this == obj) return true;
+    //     if (obj == null || getClass() != obj.getClass()) return false;
+    //     Point2D point2D = (Point2D) obj;
+    //     return x == point2D.x && y == point2D.y;
+    // }
+
+    // Overridden equals method
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Point2D point2D = (Point2D) obj;
-        return x == point2D.x && y == point2D.y;
+    public boolean equals(Object object) {
+        if (object == null || !(object instanceof Point2D)) {
+            return false;
+        }
+        if (this == object) {
+            return true;
+        }
+        Point2D point = (Point2D) object;
+        return this.x == point.x && this.y == point.y;
     }
 
     public static void main(String[] args) {
