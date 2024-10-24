@@ -36,7 +36,7 @@
          int a = 30;
          assert(a != 0);
          assert(null == null); // could this ever be false?
-         assert(true == true); // a bad day indeed if this could be false
+         assert(true); // a bad day indeed if this could be false
          // TODO: craft two more asserts and place them here. If they're false, they'll crash the program.
          assert(10 < 20);  // Example assert
          assert("hello".length() == 5);  // Example assert
@@ -48,21 +48,22 @@
       * by employing the relational operators.
       */
      private static void assertWithPrimitives() {
-         //assert below to ensure a Fraction's denominator is never 0
-         Scanner keys = new Scanner(System.in);
-         System.out.println("Enter an integer numerator:");
-         int num = keys.nextInt();
-         System.out.println("Enter an int denominator, not 0:");
-         int denom = keys.nextInt();
-         assert(denom != 0);
+         try (//assert below to ensure a Fraction's denominator is never 0
+        Scanner keys = new Scanner(System.in)) {
+            System.out.println("Enter an integer numerator:");
+             int num = keys.nextInt();
+             System.out.println("Enter an int denominator, not 0:");
+             int denom = keys.nextInt();
+             assert(denom != 0);
  
-         //assert that all ArrayLists start empty
-         ArrayList<String> emptyList = new ArrayList<String>();
-         assert(emptyList.size() == 0);
+             //assert that all ArrayLists start empty
+             ArrayList<String> emptyList = new ArrayList<String>();
+             assert(emptyList.size() == 0);
  
-         // TODO: build two more asserts that use primitives and relational operators here
-         assert(num > 0);  // Example assert
-         assert(denom > 0);  // Example assert
+             // TODO: build two more asserts that use primitives and relational operators here
+             assert(num > 0);  // Example assert
+             assert(denom > 0);  // Example assert
+        }
      }
  
      /**
