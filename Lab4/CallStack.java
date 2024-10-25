@@ -5,8 +5,6 @@ public class CallStack {
     // Called by func1()
     void func2() {
         System.out.println("In func2 method");
-        int a = 0;
-        int b = 10 / a;  // This will cause an ArithmeticException
     }
 
     // Called by main

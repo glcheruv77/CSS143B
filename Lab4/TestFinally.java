@@ -19,9 +19,8 @@ public class TestFinally {
             in1 = new FileInputStream(inputFile1);
             in2 = new FileInputStream(inputFile2);
 
-            int c1;
             // Try to read 'nosuchfile.abc' till the end of File
-            while ((c1 = in2.read()) != -1) {
+            while ((in2.read()) != -1) {
                 System.out.println("Read from nosuchfile.abc");
             }
 
