@@ -64,6 +64,12 @@ public class SimpleColor {
         this(b.r, b.g, b.b); // calling parameterized constructor
     }
 
+    // Override toString method
+    @Override
+    public String toString() {
+        return "("+ r + "," + g + "," + b +")";
+    }
+
     // Override equals method to compare SimpleColor objects
     @Override
     public boolean equals(Object o) {
