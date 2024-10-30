@@ -1,13 +1,19 @@
-public class ColorException extends RuntimeException{
+//Glenn Cheruvathur
+//CSSSKL143
 
-    public ColorException(){
+public class ColorException extends RuntimeException {
+    // no-arg constructor
+    public ColorException() {
         super("An error occurred in Color");
     }
-    public ColorException(String msg){
+
+    // second constructor with a message
+    public ColorException(String msg) {
         super(msg);
     }
-    public static void main(String[] args){
 
+    // main method to test
+    public static void main(String[] args) {
+        throw new ColorException("A test in main");
     }
-
 }
