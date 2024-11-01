@@ -1,3 +1,8 @@
+//Glenn Cheruvathur
+//CSSSKL143
+
+
+
 public class Consultant extends HourlyWorker {
     // Constructor with just hourly pay
     public Consultant(double hourlyPay) {

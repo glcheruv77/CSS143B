@@ -1,3 +1,7 @@
+//Glenn Cheruvathur
+//CSSSKL143
+
+
 public class PermanentHire extends SalariedWorker {
     private double bonus; // Monthly bonus
 

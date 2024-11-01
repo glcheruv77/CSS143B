@@ -21,7 +21,7 @@ public class ColorDriver {
         System.out.println("a equals c: " + a.equals(c));
         System.out.println("b equals c: " + b.equals(c));
 
-        // Try some bad alpha values for exception handling
+        //try some bad alpha values for exception handling
         try {
             a.setAlpha(300);
         } catch (RuntimeException e) {

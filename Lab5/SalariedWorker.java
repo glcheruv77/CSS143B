@@ -1,3 +1,11 @@
+//Glenn Cheruvathur
+//CSSSKL143
+
+/*
+* SalariedWorker.java
+* This worker calculates her weekly pay differently than a hourly worker does, so
+we override the calculateWeeklyPay method
+*/
 public class SalariedWorker extends Employee {
     private double monthlyPay; // Monthly pay rate
 

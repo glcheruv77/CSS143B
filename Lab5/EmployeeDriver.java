@@ -1,3 +1,6 @@
+//Glenn Cheruvathur
+//CSSSKL143
+
 import java.util.ArrayList;
 /*
 * Driver
@@ -18,6 +21,13 @@ public class EmployeeDriver {
         //todo: Build some PermanentHire and Consultant objects here
         //and add them to the ArrayList below
         //and build a set of workers, all of which are employees
+
+
+        //how would this change the way ArrayList is declared?
+        //This will cause a ClassCastException, ColorException isn't a subclass of Employee
+    
+        // If you want the ArrayList to store both Employees and ColorException,
+        // use ArrayList<Object> and handle casting properly
         ArrayList<Employee> myEmployees = new ArrayList<Employee>();
         myEmployees.add(emp1);
         myEmployees.add(emp2);
@@ -34,5 +44,23 @@ public class EmployeeDriver {
             Employee current = myEmployees.get(i);
             System.out.println( current.getName() + " makes " + current.calculateWeeklyPay() + " per week.");
         }
+
+        // What error do you encounter? What does this mean?
+        //you get a ClassCastException. This means ColorWithAlpha isn't a subclass of Employee
+
+        /*
+         * What methods are polymorphic in the Employee Hierarchy?
+         * Polymorphic methods in the Employee Hierarchy include: calculateWeeklyPay()
+         * 
+         * How could we build a method like getRandShape() above but for use with Employees?
+         * Building a method similar to getRandShape() for Employees could look like this:
+         * public Employee getRandomEmployee() { Use random logic to return an instance of a subclass of Employee
+         * 
+         * If we built a getRandomEmployee() method that returns various Employee subclass objects; write a few lines of code that would demonstrate late binding
+         * Demonstrating late binding with a getRandomEmployee() method:
+         * Employee randomEmployee = getRandomEmployee();
+         * System.out.println(randomEmployee.calculateWeeklyPay());
+         * 
+         */
     }
 }

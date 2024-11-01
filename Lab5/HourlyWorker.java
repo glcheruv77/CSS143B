@@ -1,3 +1,11 @@
+//Glenn Cheruvathur
+//CSSSKL143
+
+/*
+* HourlyWorker.java
+* This worker calculates her weekly pay differently than a salaried worker does,
+so we override the calculateWeeklyPay method
+*/
 public class HourlyWorker extends Employee {
     private double hourlyPay; // Hourly pay rate
     public static final double MINIMUM_WAGE = 10.0; // Minimum wage constant
@@ -29,6 +37,7 @@ public class HourlyWorker extends Employee {
         return hourlyPay;
     }
 
+    //notice how we override this method to act accordingly for an hourly wage
     // Override calculateWeeklyPay method
     @Override
     public double calculateWeeklyPay() {

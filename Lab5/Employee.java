@@ -1,3 +1,12 @@
+//Glenn Cheruvathur
+//CSSSKL143
+
+/*
+* Employee.java - Abstract
+* This is the superclass of all workers in this company
+* All employees must have a name and social security number.
+*/
+//notice the abstract keyword? That prevents us from making objects of this type!
 public abstract class Employee {
     private String name; // Employee's name
     private int social; // Social security number
