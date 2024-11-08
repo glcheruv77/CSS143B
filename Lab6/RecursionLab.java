@@ -1,3 +1,6 @@
+// Glenn Cheruvathur
+// CSSSKL143
+
 /*----------------------------------------------------------------------------------
 -
 *
@@ -100,6 +103,9 @@ public class RecursionLab {
 
         }
     }
+    // Q: which is faster, and why?
+    // comparing the execution times of the iterative and recursive file search implementations for large n (number of files and directories), 
+    // you'll find that the iterative version is generally faster.
        
     public static int iterativeSum( int i ) {
         int total = 0;
